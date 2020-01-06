@@ -2,8 +2,8 @@
 //  GameScene.swift
 //  FlappyBird
 //
-//  Created by Nate Murray on 6/2/14.
-//  Copyright (c) 2014 Fullstack.io. All rights reserved.
+//  Created by Duc Tri Nguyen on 06/01/19.
+//  Copyright (c) 2019 Duc Tri Nguyen. All rights reserved.
 //
 
 import SpriteKit
@@ -99,9 +99,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         self.run(spawnThenDelayForever)
         
         // setup our bird
-        let birdTexture1 = SKTexture(imageNamed: "bird-01")
+        let birdTexture1 = SKTexture(imageNamed: "bird-01.png")
         birdTexture1.filteringMode = .nearest
-        let birdTexture2 = SKTexture(imageNamed: "bird-02")
+        let birdTexture2 = SKTexture(imageNamed: "bird-02.png")
         birdTexture2.filteringMode = .nearest
         
         let anim = SKAction.animate(with: [birdTexture1, birdTexture2], timePerFrame: 0.2)
